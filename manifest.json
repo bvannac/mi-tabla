@@ -2,7 +2,7 @@
   "name": "Mi Tabla Semanal",
   "short_name": "Mi Tabla",
   "description": "Crea y edita tablas semanales con colores y notas",
-  "start_url": "./mi_tabla.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f0f4f0",
   "theme_color": "#2d6a4f",

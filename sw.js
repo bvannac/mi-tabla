@@ -3,7 +3,7 @@ const CACHE_NAME = 'mi-tabla-v1';
 // Solo cacheamos los ficheros propios de la app, NO librerías externas
 // jsPDF se carga siempre desde la red para garantizar que el PDF funcione
 const FILES_TO_CACHE = [
-  './mi_tabla.html',
+  './index.html',
   './manifest.json',
   './icon-192.png',
   './icon-512.png'
@@ -64,7 +64,7 @@ self.addEventListener('fetch', event => {
       });
     }).catch(() => {
       // Si no hay red ni caché, devolver la página principal
-      return caches.match('./mi_tabla.html');
+      return caches.match('./index.html');
     })
   );
 });
